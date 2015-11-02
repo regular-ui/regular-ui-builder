@@ -1,0 +1,55 @@
+
+$g-top_height = 40px;
+$g-lsd_width = 120px;
+$g-rsd_width = 240px;
+$g_border-width = 1px;
+
+.g-top, .g-lsd, .g-rsd, .g-mn {
+    position: absolute;
+}
+
+.g-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $g-top_height;
+    background: #333;
+    color: #f4f4f4;
+}
+
+.g-lsd, .g-rsd {
+    top: $g-top_height;
+    bottom: 0;
+    background: #444;
+}
+
+.g-lsd {
+    left: 0;
+    width: $g-lsd_width;
+}
+
+.g-rsd {
+    right: 0;
+    width: $g-rsd_width;
+}
+
+.g-mn {
+    top: $g-top_height;
+    bottom: 0;
+    left: $g-lsd_width;
+    right: $g-rsd_width;
+    background: #777;
+    overflow: auto;
+}
+
+.g-paper {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    left: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: -400px;
+    background: white;
+    box-shadow: 1px 1px 3px 1px #555;
+}
