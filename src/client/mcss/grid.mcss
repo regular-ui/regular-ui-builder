@@ -1,55 +1,70 @@
 
 $g-top_height = 40px;
-$g-lsd_width = 120px;
-$g-rsd_width = 240px;
 $g_border-width = 1px;
+$g-lt_width = 120px;
+$g-rt_width = 240px;
 
-.g-top, .g-lsd, .g-rsd, .g-mn {
+.g-lt, .g-lthd, .g-ltbd, .g-mn, .g-mnhd, .g-mnbd, .g-rt, .g-rthd, .g-rtbd {
     position: absolute;
 }
 
-.g-top {
+// .g-top {
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     height: $g-top_height;
+//     background: #333;
+//     color: #f4f4f4;
+// }
+
+.g-lt, .g-rt, .g-mn {
     top: 0;
-    left: 0;
-    right: 0;
-    height: $g-top_height;
-    background: #333;
-    color: #f4f4f4;
-}
-
-.g-lsd, .g-rsd {
-    top: $g-top_height;
     bottom: 0;
-    background: #444;
 }
 
-.g-lsd {
+.g-lt {
     left: 0;
-    width: $g-lsd_width;
+    width: $g-lt_width;
 }
 
-.g-rsd {
+.g-rt {
     right: 0;
-    width: $g-rsd_width;
+    width: $g-rt_width;
 }
 
 .g-mn {
-    top: $g-top_height;
-    bottom: 0;
-    left: $g-lsd_width;
-    right: $g-rsd_width;
+    left: $g-lt_width;
+    right: $g-rt_width;
     background: #777;
+}
+
+.g-lthd, .g-mnhd, .g-rthd {
+    background: #333;
+    color: #f4f4f4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: $g-top_height;
+}
+
+.g-ltbd, .g-mnbd, .g-rtbd {
+    background: #444;
+    top: $g-top_height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.g-mnbd {
     overflow: auto;
+    background: #ccc;
 }
 
 .g-paper {
     position: absolute;
     width: 800px;
     height: 600px;
-    left: 50%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: -400px;
+    margin: 60px;
     background: white;
-    box-shadow: 1px 1px 3px 1px #555;
+    box-shadow: 1px 1px 3px #777;
 }

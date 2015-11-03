@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "express": "^4.13.3",
+    "mcss": "^0.5.1",
     "regular-ui": "^0.1.4"
   },
   "devDependencies": {
